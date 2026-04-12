@@ -8,7 +8,7 @@ local PAYLOAD_SCRIPT = function()
 	-- // ======================================================================= \\ --
 	
 	-- This executes exactly when the UI says "Executing Script..."
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptBN/MainOptimumAPI/refs/heads/main/OptimumReal"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FuddyOG/KeyScriptOptimumReal/refs/heads/main/KeyScriptOptimum.lua"))()
 	
 	-- // ======================================================================= \\ --
 	-- //                      ⬆️ YOUR AUTO-EXECUTE SCRIPT ⬆️                     \\ --
