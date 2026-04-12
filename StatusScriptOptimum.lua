@@ -1,5 +1,5 @@
 -- // Configuration (Change these to test different outcomes) \\ --
-local SCRIPT_STATUS = "UP" -- Change to "DOWN" to test the kick sequence
+local SCRIPT_STATUS = "DOWN" -- Change to "DOWN" to test the kick sequence
 local SIMULATE_HOOK_ERROR = false -- Change to true to force test the hook services error
 
 local PAYLOAD_SCRIPT = function()
