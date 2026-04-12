@@ -289,7 +289,7 @@ local function startSequence()
 		task.spawn(PAYLOAD_SCRIPT)
 		
 		-- Wait a brief moment to simulate the execution process finishing
-		task.wait(0.5)
+		task.wait(0.3)
 		
 		-- Replaces text with "Completed Successfully"
 		line3.Text = '<font color="rgb(0,255,0)">[ Boot ]</font> Completed Successfully'
