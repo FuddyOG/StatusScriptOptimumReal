@@ -93,7 +93,7 @@ TitleIcon.Size = UDim2.new(0, 20, 0, 20)
 TitleIcon.Position = UDim2.new(0, 10, 0.5, -10)
 TitleIcon.BackgroundTransparency = 1
 TitleIcon.ImageTransparency = 1
-TitleIcon.Image = "rbxassetid://122306902443641" -- Updated to your exact specific ID
+TitleIcon.Image = "rbxassetid://88212715268907" -- Updated to your exact specific ID
 TitleIcon.Parent = TopBar
 
 local TopBarTitle = Instance.new("TextLabel")
