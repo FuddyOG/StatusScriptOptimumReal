@@ -469,7 +469,7 @@ local function startSequence()
 		if SIMULATE_HOOK_ERROR or executorLacksWebhook then
 			local line5 = createConsoleLine(6)
 			line5.Text = '<font color="rgb(255,0,0)">HOOKSERVICES ERROR (YOUR EXECUTER DOES NOT HAVE A WEBHOOK SUPPORT)</font>'
-			task.wait(2.5)
+			task.wait(4)
 			
 			fadeElements({MainFrame, TopBar, TopBarExtension, TitleIcon, TopBarTitle, GreenBtn, BlueBtn, RedBtn, Watermark, MainTitle, line1, line2, line3, lineCheckUp, line4, line5}, 1, 0.5)
 			ScreenGui:Destroy()
