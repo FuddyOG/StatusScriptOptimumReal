@@ -47,8 +47,9 @@ ScreenGui.Parent = targetGui
 -- Main Container
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
-MainFrame.Size = UDim2.new(0, 500, 0, 260)
-MainFrame.Position = UDim2.new(0.5, -250, 0.5, -130)
+-- [FIX]: Increased height from 260 to 320 to fit all text and prevent overlapping watermark
+MainFrame.Size = UDim2.new(0, 500, 0, 320)
+MainFrame.Position = UDim2.new(0.5, -250, 0.5, -160)
 MainFrame.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
 MainFrame.BorderSizePixel = 0
 MainFrame.BackgroundTransparency = 1 -- Start transparent for fade in
@@ -144,7 +145,8 @@ MainTitle.Parent = MainFrame
 -- Console Container
 local ConsoleFrame = Instance.new("Frame")
 ConsoleFrame.Name = "ConsoleFrame"
-ConsoleFrame.Size = UDim2.new(1, -40, 0, 100)
+-- [FIX]: Increased height to 160 to prevent clipping
+ConsoleFrame.Size = UDim2.new(1, -40, 0, 160)
 ConsoleFrame.Position = UDim2.new(0, 20, 0, 100)
 ConsoleFrame.BackgroundTransparency = 1
 ConsoleFrame.Parent = MainFrame
@@ -302,6 +304,9 @@ end
 local function createConsoleLine(order)
 	local line = Instance.new("TextLabel")
 	line.Size = UDim2.new(1, 0, 0, 20)
+	-- [FIX]: Enable Text wrapping and Auto Y scaling so long text forces a new line
+	line.AutomaticSize = Enum.AutomaticSize.Y 
+	line.TextWrapped = true 
 	line.BackgroundTransparency = 1
 	line.Text = ""
 	line.RichText = true
